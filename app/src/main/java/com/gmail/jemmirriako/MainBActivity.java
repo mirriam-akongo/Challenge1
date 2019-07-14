@@ -37,7 +37,7 @@ public class MainBActivity extends AppCompatActivity {
         } );
 
         String url = "https://andela.com/alc/";
-
+//required URL
 
         web.loadUrl(url);
     }
