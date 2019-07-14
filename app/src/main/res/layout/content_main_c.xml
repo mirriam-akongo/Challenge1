@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainCActivity"
+    tools:showIn="@layout/activity_main_c">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="262dp"
+        android:layout_height="247dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mirriam" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Mirriam Akongo"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/track"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:text="Track:  Android"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="336dp"
+        android:layout_height="66dp"
+        android:text="Country:  uganda"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/track"
+        app:layout_constraintStart_toStartOf="@+id/track"
+        app:layout_constraintTop_toBottomOf="@+id/track" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="340dp"
+        android:layout_height="63dp"
+        android:text="Email: jemmirriako@gmail.com"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/country"
+        app:layout_constraintStart_toStartOf="@+id/country"
+        app:layout_constraintTop_toBottomOf="@+id/country" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="335dp"
+        android:layout_height="72dp"
+        android:text="Phone number: 256758292029"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+</androidx.constraintlayout.widget.ConstraintLayout>
